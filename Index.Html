@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário leads">
+    <meta name="keywords" content="finanças, gestão, planejamento, fluxo de caixa">
+    <meta name="author" content="Lucimar Santos">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<p>Lucimar Santos|Assistente Financeira</p>
+</header>
+<main>
+<section>
+<div class="container">
+<div class="flex">
+<div class="txt-leads">
+ <h1><span>Plano de Negócios </span> <br>Simplificado</h1><br>
+ <img src="grafico.jpg" alt="Gráfico financeiro"><br><br>
+ <p>Não perca mais tempo sonhando <br>
+ <span>Transforme sua ideia em realidade! </span><br>
+                   Neste PDF-PNS vai encontrar:<br>
+                   * O que é um plano de negócios e sua importância<br>
+                   * Análise de Mercado<br>
+                   * Plano de Marketing e Plano Financeiro
+ </p>
+</div>
+ <div class="form-leads">
+ <form id="meuFormulario" name="meuFormulario" data-netlify="true" method="post">
+    <input type="hidden" name="form-name" value="meuFormulario">
+ <h2>Entre em Contato <br>
+ <span>Receba seu PDF/PNS</span>
+ </h2>
+ <div class="input-box">
+ <label for="nameInput">Nome:</label>
+ <input type="text" id="nameInput" name="nome" required>
+ </div>
+ <div class="input-box">
+ <label for="phoneInput">Telefone:</label>
+ <input type="text" id="phoneInput" name="telefone" required>
+ </div>
+ <div class="input-box">
+ <label for="emailInput">E-mail:</label>
+ <input type="email" id="emailInput" name="email" required>
+ </div>
+ <div class="btn">
+  <button type="submit">Enviar</button>
+ </div>
+ <div id="mensagem"></div>
+ </form>
+  </div>
+  </div>
+ </div>
+</section>
+<footer><i>
+ <strong>&copy; 2024 Desenvolvido por LS Soluções. Todos os direitos reservados.</strong>
+    </footer></i>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

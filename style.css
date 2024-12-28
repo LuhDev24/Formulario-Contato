@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height:100%;
+    background-color:#000000;
+    background-repeat:repeat;
+    background-position: center center;
+    background-size: cover;
+	padding:0;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:green;
+    height: 50px;
+    padding: 10px;
+	font-size:2em;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 20px;
+	 min-height: calc(100vh - 50px); /* Altura da tela menos o tamanho do footer */
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    flex-wrap: wrap; /* Adicionado para permitir que os elementos empilhem em telas pequenas */
+}
+
+.txt-leads {
+    text-align: center;
+    flex: 1 1 45%; /* Define largura flexível */
+}
+
+.txt-leads h1 {
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.txt-leads h1 span {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.txt-leads img {
+    width: 200px;
+    max-width: 100%;
+}
+
+.txt-leads p {
+    color: #fff;
+    font-size: 1.3em;
+    margin: 20px 0;
+}
+
+.txt-leads p span {
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    background-color:#00CC00;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 20px auto; /* Centralizado */
+}
+
+form h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+form h2 span {
+    font-size: 0.8em;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box label {
+    display: block;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+Button {
+    width: 140px;
+    height: 50px;
+    border: 0;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    background: green;
+    height: 80px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Media Query for smaller screens */
+@media  (max-width: 480px) { 
+header p {
+        font-size: 15px; /* Ajuste para telas menores */
+    }
+  form {
+    max-width: 90%; /* Ajusta a largura máxima para telas menores */
+    padding: 30px; 
+  }
+
+    .flex {
+        flex-direction: column; /* Elementos empilhados */
+        text-align: center;
+    }
+
+    .txt-leads h1 {
+        font-size: 1.8em;
+    }
+
+    .txt-leads p {
+        font-size: 1.1em;
+    }
+
+    form {
+        width: 90%; /* Para telas menores */
+		color:black;
+    }
+
+    footer {
+        font-size: 10px; /* Reduz tamanho da fonte em telas pequenas */
+        padding: 5px; /* Menor espaçamento */
+    }
